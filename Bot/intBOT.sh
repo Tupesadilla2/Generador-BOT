@@ -67,7 +67,7 @@ permited=$(curl -sSL "$(ofus $keybot)/ChumoGH/VPSbot/main/TeleBotGen/Control/Con
   echo -e "\n\n\n\e[31m====================================================="
   echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) FUE RECHAZADA!"
   echo -e "     $link No AUTORIZADA el ACCESO "
-  echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
+  echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @tupesadilla_b"
   echo -e "\e[31m=====================================================\n\n\n\e[0m"
   [[ -e "/bin/ShellBot.sh" ]] && rm -f /bin/ShellBot.sh
     exit 1
@@ -113,7 +113,7 @@ echo -e "  MENSAJE ACTUAL $(cat < /etc/mpayu)"
 echo -e "$bar"
 echo -e "  \033[1;37mINGRESA TU METODO DE PAGO Y/O CORREO"
 echo -e "$bar\n"
-echo -e "Ingresa en este Orden o Secuencia \n PAYPAL : chumogh@gmail.com \n"
+echo -e "Ingresa en este Orden o Secuencia \n PAYPAL : eventoscjb@gmail.com \n"
 echo -e "$bar"
 read -p "TEXTO: " opcion
 [[ -z $opcion ]] && bot_gen && exit || echo "$opcion" > /etc/mpayu && echo "TOKEN APLICADO EXITOSAMENTE"
@@ -142,7 +142,7 @@ echo "URL APLICADO EXITOSAMENTE"
 systemctl restart BotGen-server &>/dev/null
 }
 echo -e "$bar\n"
-echo -e " AGREGA NUEVO ENLACE PARA DONACIONES / OPCIONAL \n  https://www.paypal.com/paypalme/ChumoGH  \n"
+echo -e " AGREGA NUEVO ENLACE PARA DONACIONES / OPCIONAL \n  https://www.paypal.com/paypalme/cyberperu \n"
 echo -e "$bar"
 read -p "TEXTO: " donat
 [[ -z $donat ]] && return || { 
@@ -176,7 +176,7 @@ if [[ ! $PIDGEN ]]; then
 [[ $bot_ini = @(s|S|y|Y) ]] && {
 
 	echo -e "[Unit]
-Description=BotGen Service by @ChumoGH
+Description=BotGen Service by @tupesadilla_b
 After=network.target
 StartLimitIntervalSec=0
 
@@ -264,7 +264,7 @@ echo -ne "\033[1;31m[ ! ] RESTAUDANDO ADMINISTRADOR "
 [[ -e $HOME/num-key.cont ]] && mv $HOME/num-key.cont /etc/ADM-db/num-key.cont
 ) && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
 [[ ! -e ${CIDdir}/resell ]] && echo "@ChumoGH" > ${CIDdir}/resell
-[[ ! -e $(cat < /etc/mpayu) ]] && echo "Paypal : chumogh@outlook.com" > /etc/mpayu && echo "593987072611" > /etc/numctc
+[[ ! -e $(cat < /etc/mpayu) ]] && echo "Paypal : eventoscjb@gmail.com" > /etc/mpayu && echo "593987072611" > /etc/numctc
  rm $HOME/lista-arq
  systemctl restart BotGen-server &>/dev/null
  bot_gen
